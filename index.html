@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./page.css">
+    <script src="./page1.js">defer</script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">BUDGET APP</h1>
+        <div class="section1">
+            <div class="budget-form">
+                <form action="#" id*="form1">
+                <label for="">please enter your budget</label>
+                <p class="error">value can't be empty or negatve or zero</p>
+                <input type="text" id="budget amount">
+                <button id="add-budget">add budget</button>
+            </form>
+            </div>
+
+            <div class="feedback">
+                <div class="feedback-item">
+                    <h2 class="feedback-item__title">budget</h2>
+                    <img class="feedback-item__image" src="./img/cash1.png" alt="">
+                    <p class="feedback-item__amount green">
+                        $ <span class="feedback-item__budget__show">0</span>
+                    </p>
+                </div>
+            </div>
+            <div class="feedback">
+                <div class="feedback-item">
+                    <h2 class="feedback-item__title">expenses</h2>
+                    <img class="feedback-item__image" src="./img/exp.png" alt="">
+                    <p class="feedback-item__amount red">
+                        $ <span class="feedback-item__budget__show">0</span>
+                    </p>
+                </div>
+            </div>
+            <div class="feedback">
+                <div class="feedback-item">
+                    <h2 class="feedback-item__title">balance</h2>
+                    <img class="feedback-item__image" src="./img/bal.png" alt="">
+                    <p class="feedback-item__amount black">
+                        $ <span class="feedback-item__budget__show">0
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section2">
+            <div class="expense-form">
+                <form action="#" id="form2">
+                    <label for="">please enter your expense name
+
+                    </label>
+                    <p class="error"> value can't be empty and can't contain numbers </p>
+                    <input type="text" id="expense-name">
+                    <label for="">please enter your expense amount
+
+                    </label>
+                    <p class="error"> value can't be empty or negative or zero </p>
+                    <input type="text" id="expense-amount">
+                    <button id="expense-add">add expense</button>
+                </form>
+            </div>
+
+
+            <div class="expense-feedback">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="expense-title">expense title
+
+                            </th>
+                            <th class="expense-value">expense value
+
+                            </th>
+                            <th class="delete-edit"></th>
+                        </tr>
+                        
+                    </thead>
+                    <tbody>
+                        <template id="expense-row">
+                            <tr>
+                                <td class="expense-title"></td>
+                                <td class="expense-value"></td>
+                                <td class="delete-edit">
+                                    <img class="trashRow" src="img/trash.png" alt="">
+                                    <img class="editRow" src="img/edit.png" alt="">
+                                </td>
+                            </tr>
+        
+                        </template>
+                    </tbody>
+
+                   
+        
+                </table>
+
+               
+            </div>
+        </div>
+    </div>
+</body>
+</html>
